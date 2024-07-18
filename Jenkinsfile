@@ -12,6 +12,7 @@ pipeline {
         stage("Install"){
             steps {
                 sh "sudo yum install git -y"
+                sh "sudo yum install maven -y"
             }
         }
         stage("Clone"){
